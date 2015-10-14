@@ -10,6 +10,7 @@ module CarrierWave
         add_config :aliyun_internal
         add_config :aliyun_host
         add_config :aliyun_upload_host
+        add_config :aliyun_bucket_private
       end
     end
     
