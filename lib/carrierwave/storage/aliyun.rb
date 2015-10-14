@@ -214,7 +214,7 @@ module CarrierWave
         end
 
         def url
-          if @aliyun_bucket_private
+          unless @uploader.aliyun_bucket_private.nil?
             oss_connection.path_to_safe_url(@path, :get => true)
           else
             oss_connection.path_to_url(@path, :get => true)
